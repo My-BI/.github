@@ -51,18 +51,18 @@ the **"Trusted by MyBI"** badge after review. Your private key never leaves your
 
 → [How cross-signing works](https://my-bi.github.io/verify.html)
 
-### MyBI Enterprise Studio — coming soon
+### MyBI Enterprise Studio
 
-A planned desktop console for organisations running MyBI as a team. Sign in with your work
+A desktop console for organisations running MyBI as a team. Sign in with your work
 account, set up your organisation, and assign roles — **admin, project leader, dashboard
 developer** — that govern who can open and edit which projects and dashboards. Identity stays
 sealed to the device; a free, personal MyBI signs in to nothing.
 
 → [On the roadmap](https://my-bi.github.io/roadmap.html)
 
-### MyBI Forensic — coming soon
+### MyBI Forensic
 
-A planned read-only verifier for MyBI's tamper-evident export trail, for security and compliance
+A read-only verifier for MyBI's tamper-evident export trail, for security and compliance
 teams. Every export appends to an **Ed25519-signed SHA-256 hash chain**; MyBI Forensic re-checks
 every signature, hash link and sequence number out-of-band — proving whether the record is
 intact, or entries were **deleted, edited or reordered**. It never writes or "repairs" anything.
