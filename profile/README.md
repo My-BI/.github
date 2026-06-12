@@ -32,8 +32,8 @@ so a total reads the same in every visual — checked, never assumed.
 
 ## The MyBI family
 
-One app, plus two focused desktop companions — for the people who publish plugins, and the people
-who have to account for what left the building.
+One app, plus three focused desktop companions — for the people who publish plugins, the people
+who run MyBI across an organisation, and the people who have to account for what left the building.
 
 ### MyBI &mdash; the app
 
@@ -51,12 +51,21 @@ the **"Trusted by MyBI"** badge after review. Your private key never leaves your
 
 → [How cross-signing works](https://my-bi.github.io/verify.html)
 
-### MyBI Forensic Studio — coming soon
+### MyBI Enterprise Studio — coming soon
 
-A planned companion for security and compliance teams. It opens MyBI's encrypted, **forensic
-exports** — a content key sealed to your organisation with **X25519**, the body under
-**AES-256-GCM** — and verifies the **Ed25519 SHA-256 hash-chained audit log**, proving a bundle
-hasn't been tampered with and showing the disclosed device fingerprint behind every export.
+A planned desktop console for organisations running MyBI as a team. Sign in with your work
+account, set up your organisation, and assign roles — **admin, project leader, dashboard
+developer** — that govern who can open and edit which projects and dashboards. Identity stays
+sealed to the device; a free, personal MyBI signs in to nothing.
+
+→ [On the roadmap](https://my-bi.github.io/roadmap.html)
+
+### MyBI Forensic — coming soon
+
+A planned read-only verifier for MyBI's tamper-evident export trail, for security and compliance
+teams. Every export appends to an **Ed25519-signed SHA-256 hash chain**; MyBI Forensic re-checks
+every signature, hash link and sequence number out-of-band — proving whether the record is
+intact, or entries were **deleted, edited or reordered**. It never writes or "repairs" anything.
 
 → [On the roadmap](https://my-bi.github.io/roadmap.html)
 
